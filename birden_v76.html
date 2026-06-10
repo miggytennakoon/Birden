@@ -7306,6 +7306,7 @@ function importEbirdSightings(){
   });
   save();
   updateUI();
+  if(sbUser) syncSightingsToCloud();
   const parts=[];
   if(added)parts.push(`${added} new species`);
   if(merged)parts.push(`${merged} updated`);
